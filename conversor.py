@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #---------------------------------------
+# codigo pego em: https://github.com/jansenicus/vtt-to-srt.py ainda nao testei. 
 # vtt-to-srt.py
 # (c) Jansen A. Simanullang
 # 02.04.2016 13:39

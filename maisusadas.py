@@ -30,26 +30,10 @@ for line in lines:
     elif current_times is not None:
         current_text = current_text + line.replace("\n"," ")
 
-print (times_texts)
+#print (times_texts)
 
 whole_text = " ".join([text for (time, text) in times_texts])
 all_words = re.findall("\w+", whole_text)
 
 counter = Counter([w.lower() for w in all_words if len(w)>5])
 print (counter.most_common(10))
-
-
-#
-# cuts = [times for (times,text) in times_texts
-#         if (re.findall("gravity",text) != [])]
-#
-#
-# video = VideoFileClip("video.mkv")
-#
-# def assemble_cuts(cuts, outputfile):
-#     """ Concatenate cuts and generate a video file. """
-#     final = concatenate([video.subclip(start, end)
-#                          for (start,end) in cuts])
-#     final.to_videofile(outputfile)
-#
-# assemble_cuts(cuts, "supercut.mp4")
